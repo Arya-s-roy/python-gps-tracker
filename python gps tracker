@@ -21,6 +21,10 @@ Copy
 Edit
 import smtplib
 from email.mime.text import MIMEText
+sender_email = "youremail@gmail.com"
+receiver_email = "emergency@example.com"
+password = "yourpassword"
+
 
 
 

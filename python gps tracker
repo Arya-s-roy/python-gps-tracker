@@ -1,3 +1,5 @@
 import folium
 import random
+lat, lon = 22.5726, 88.3639  # Start in Kolkata
+path = [(lat, lon)]
 

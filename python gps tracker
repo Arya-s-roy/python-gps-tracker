@@ -15,5 +15,14 @@ for point in path[1:]:
 folium.PolyLine(path, color="red", weight=2.5).add_to(m)
 m.save("gps_tracking.html")
 print("Map saved as gps_tracking.html")
+3. Emergency SOS Email Sender
+python
+Copy
+Edit
+import smtplib
+from email.mime.text import MIMEText
+
+
+
 
 

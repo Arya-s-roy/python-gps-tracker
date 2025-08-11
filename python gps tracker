@@ -12,6 +12,8 @@ folium.Marker(path[0], popup="Start").add_to(m)
 
 for point in path[1:]:
     folium.Marker(point).add_to(m)
-
+folium.PolyLine(path, color="red", weight=2.5).add_to(m)
+m.save("gps_tracking.html")
+print("Map saved as gps_tracking.html")
 
 

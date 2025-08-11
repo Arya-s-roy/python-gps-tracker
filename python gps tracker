@@ -7,5 +7,11 @@ for _ in range(10):
     lon += random.uniform(-0.001, 0.001)
     path.append((lat, lon))
 
+m = folium.Map(location=path[0], zoom_start=15)
+folium.Marker(path[0], popup="Start").add_to(m)
+
+for point in path[1:]:
+    folium.Marker(point).add_to(m)
+
 
 

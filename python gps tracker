@@ -1,4 +1,4 @@
-import folium
+eimport folium
 import random
 lat, lon = 22.5726, 88.3639  # Start in Kolkata
 path = [(lat, lon)]
@@ -24,6 +24,11 @@ from email.mime.text import MIMEText
 sender_email = "youremail@gmail.com"
 receiver_email = "emergency@example.com"
 password = "yourpassword"
+msg = MIMEText("🚨 SOS Alert! This is an emergency notification.")
+msg['Subject'] = "EMERGENCY ALERT"
+msg['From'] = sender_email
+msg['To'] = receiver_email
+
 
 
 
